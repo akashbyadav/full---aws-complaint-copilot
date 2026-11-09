@@ -1,0 +1,137 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "athena:StartQueryExecution",
+        "athena:GetQueryExecution",
+        "athena:GetQueryResults",
+        "athena:StopQueryExecution",
+        "athena:GetWorkGroup"
+      ],
+      "Resource": [
+        "arn:aws:athena:us-east-1:851725469799:workgroup/complaint-copilot"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "glue:GetDatabase",
+        "glue:GetTable",
+        "glue:GetPartitions",
+        "glue:GetPartition",
+        "glue:BatchGetPartition"
+      ],
+      "Resource": [
+        "arn:aws:glue:us-east-1:851725469799:catalog",
+        "arn:aws:glue:us-east-1:851725469799:database/complaint_copilot",
+        "arn:aws:glue:us-east-1:851725469799:table/complaint_copilot/complaint*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetBucketLocation"
+      ],
+      "Resource": [
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1/curated/complaint_versions/*",
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1/state/pipeline.json",
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1/sessions/*",
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1/runtime/*",
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1/athena-results/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1/sessions/*",
+        "arn:aws:s3:::complaint-copilot-851725469799-us-east-1/athena-results/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:Retrieve"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:us-east-1:851725469799:knowledge-base/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-pro-v1:0",
+        "arn:aws:bedrock:us-east-1::foundation-model/cohere.rerank-v3-5:0"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:Rerank"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:DescribeLogStreams"
+      ],
+      "Resource": [
+        "arn:aws:logs:us-east-1:851725469799:log-group:/aws/bedrock-agentcore/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:DescribeLogGroups"
+      ],
+      "Resource": [
+        "arn:aws:logs:us-east-1:851725469799:log-group:*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:PutResourcePolicy"
+      ],
+      "Resource": [
+        "arn:aws:logs:us-east-1:851725469799:log-group:/aws/bedrock-agentcore/runtimes/complaint_copilot-*"
+      ]
+    },
+    {
+      "Sid": "FindProjectKnowledgeBase",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:ListKnowledgeBases"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": "us-east-1"
+        }
+      }
+    }
+  ]
+}

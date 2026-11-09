@@ -1,0 +1,29 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "FindNamedRuntime",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:ListAgentRuntimes"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": "us-east-1"
+        }
+      }
+    },
+    {
+      "Sid": "InvokeComplaintCopilot",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:InvokeAgentRuntime"
+      ],
+      "Resource": [
+        "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/complaint_copilot-*",
+        "arn:aws:bedrock-agentcore:us-east-1:ACCOUNT_ID:runtime/complaint_copilot-*/runtime-endpoint/*"
+      ]
+    }
+  ]
+}

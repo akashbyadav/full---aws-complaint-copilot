@@ -1,0 +1,6 @@
+{
+  "--CONFIG_S3_URI": "s3://complaint-copilot-851725469799-us-east-1/code/config.json",
+  "--extra-py-files": "s3://complaint-copilot-851725469799-us-east-1/code/complaint_copilot_shared-0.1.0-py3-none-any.whl",
+  "--additional-python-modules": "boto3==1.40.70,pyarrow==20.0.0",
+  "--library-set": "none"
+}

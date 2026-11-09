@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+.DS_Store
+
+config/config.failure.json

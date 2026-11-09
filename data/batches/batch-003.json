@@ -1,0 +1,67 @@
+{
+  "batch_id": "batch-003",
+  "sequence": 3,
+  "description": "Labelled classroom correction/deletion fixtures",
+  "records": [
+    {
+      "complaint_id": "11335237",
+      "date_received": "2025-01-01",
+      "company": "AMERICAN EXPRESS COMPANY",
+      "product": "Credit card",
+      "issue": "Advertising and marketing, including promotional offers",
+      "state": "IA",
+      "company_response": "Closed with explanation",
+      "timely_response": "Yes",
+      "narrative": "[CLASSROOM CORRECTION FIXTURE: NOT AN ORIGINAL CONSUMER STATEMENT]\nThe classroom demonstration record now contains the phrase ORCHID-CORRECTION.\n\nI was purchasing airline tickets when delta advertised a credit card offer that I would be able to get approved for and use for the transaction. If used, I would get a XXXX statement credit. Upon approval for the card, it asked if I wanted to use the card for the transaction and that I was approved for instant use but then would not populate the card information. I contacted American Express and both the representative and the supervisor stated I was not able to obtain a card number until I received it in the mail. They provided instructions to get a card number online but in order to do so, I needed the card information. I have included documentation of the offer and the conversations.",
+      "source_url": "https://www.consumerfinance.gov/foia-requests/foia-electronic-reading-room/cfpb-consumer-complaint-database-narratives-archive/",
+      "is_demo_fixture": true,
+      "is_deleted": false,
+      "record_version": 3
+    },
+    {
+      "complaint_id": "11342596",
+      "date_received": "2025-01-01",
+      "company": "TomoCredit Inc.",
+      "product": "Credit card",
+      "issue": "Advertising and marketing, including promotional offers",
+      "state": "NY",
+      "company_response": "Closed with explanation",
+      "timely_response": "No",
+      "narrative": "[CLASSROOM CORRECTION FIXTURE: NOT AN ORIGINAL CONSUMER STATEMENT]\nThe classroom demonstration record now contains the phrase ORCHID-CORRECTION.\n\nScammer people I keep make payments they never report it to the credit bureau",
+      "source_url": "https://www.consumerfinance.gov/foia-requests/foia-electronic-reading-room/cfpb-consumer-complaint-database-narratives-archive/",
+      "is_demo_fixture": true,
+      "is_deleted": false,
+      "record_version": 3
+    },
+    {
+      "complaint_id": "11343867",
+      "date_received": "2025-01-01",
+      "company": "GOLDMAN SACHS BANK USA",
+      "product": "Credit card",
+      "issue": "Other features, terms, or problems",
+      "state": "MD",
+      "company_response": "Closed with monetary relief",
+      "timely_response": "Yes",
+      "narrative": "[CLASSROOM CORRECTION FIXTURE: NOT AN ORIGINAL CONSUMER STATEMENT]\nThe classroom demonstration record now contains the phrase ORCHID-CORRECTION.\n\nIn XX/XX/year> I tried to get health insurance for my son. I signed up and paid $ XXXX for XXXX year of coverage. Once I found out the coverage and the local doctors I could use was not adequate, I cancelled within the 3 days. This is not disputed. I have vocal and written evidence for this. I was told they would send me a refund. Months went by and no refund. I called, many time no answers. I finally got through to an operator there and got the email address. The reason my money wasnt return was because the guy doing the refunds got XXXX and they will try to get on it. I write an email. To XXXX XXXX, who writes back, that he is new to the job and he is way behind but he will get to it. \n\nStill waiting. I call Apple/Goldman Sacks card company and complained that this is probably a fraud and I would like a refund. I sent them the name of the persons name and phone number that cancelled me along with the email from XXXX XXXX, saying he will get to it. They closed the dispute and refused to accept my story. BTW I have submitted this with Goldman at least approx XXXX times with the last one which I sent the letterhead of the health insurance company ( XXXX XXXX XXXX stating that I cancelled and never received services and they will not fight the dispute for the refund. I also have a vocal conversation with the business office of XXXX XXXX stating off of this which Goldman will not accept. At this time the problem isnt XXXX XXXX but is Goldman. The are saying that the letter could be a fraud, so they are not trusting me! The letterhead does not have XXXX XXXX but something else because they changed their accounting firm which is complicating this, but its obvious that Goldman will not pick up the phone and call them. Please help me. Im retired and {$3400.00} is a lot for me. Thanks",
+      "source_url": "https://www.consumerfinance.gov/foia-requests/foia-electronic-reading-room/cfpb-consumer-complaint-database-narratives-archive/",
+      "is_demo_fixture": true,
+      "is_deleted": false,
+      "record_version": 3
+    },
+    {
+      "complaint_id": "12059949",
+      "date_received": "2025-02-13",
+      "company": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+      "product": "Credit card",
+      "issue": "Problem with a purchase shown on your statement",
+      "state": "HI",
+      "company_response": "Closed with monetary relief",
+      "timely_response": "Yes",
+      "narrative": "contacted customer service on XX/XX/year> because i did not receive a paper bill ( as i usually do ) they advised my account had been changed to paperless and the phone number they had on file was unfamiliar. I saw a copy of the bill online at this point i advised the agent i do not recognize multiple transaction on my statement, they then opened a fraud case. In the next couple weeks i got a letter stating my account was credited for the amount disputed. \nIn XXXX was the next time i heard from Bank of America stating they were not able to approve the dispute, and the credit was reversed. I contacted them again on XX/XX/XXXX to appeal the denial. In the mean time i was still getting calls to pay on my card and getting charged late fees and interest, i kept advising them my all transactions that are on my card are fraudulent and i would not be paying until resolved. They sent another denial letter on XX/XX/XXXX on the XXXX i contacted them again to advise i still would not be paying because these are fraudulent charges and i still did not receive documents regarding the transactions to date. \nI contacted them again in XX/XX/XXXX to again dispute charges and request documentation regarding transactions in question. On XX/XX/XXXX i contacted them again and said the decision is still pending ( I was on the phone at least XXXX minutes ) the response was XXXX business days. \nThese transactions were made possibly by someone in the XXXX. The only description we have is XXXX  XXXX  and XXXX XXXX, we have no affiliation to anyone in the XXXX or order anything from there. I am disappointed they did not contact me regard suspicious activity, I've had this card for XXXX years and have never had these types of foreign transactions on my account. \nThank you in advance for your support, XXXX XXXX",
+      "source_url": "https://www.consumerfinance.gov/foia-requests/foia-electronic-reading-room/cfpb-consumer-complaint-database-narratives-archive/",
+      "is_demo_fixture": true,
+      "is_deleted": true,
+      "record_version": 3
+    }
+  ]
+}

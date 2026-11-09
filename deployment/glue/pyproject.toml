@@ -1,0 +1,18 @@
+# Packaging configuration for the small library imported by Glue's ingest.py.
+# The optional packager copies this file beside shared/ in a temporary directory.
+# Learners upload the already built wheel; they do not need to run a build.
+[build-system]
+requires = ["setuptools==75.8.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "complaint-copilot-shared"
+version = "0.1.0"
+description = "Shared AWS helpers for the Complaint Intelligence Copilot"
+requires-python = ">=3.9"
+
+# The distribution name above becomes the wheel filename. The Python import
+# stays shared.aws_helpers / shared.resource_lookup, matching the source code.
+# boto3 and pyarrow are supplied separately by the Glue job's module arguments.
+[tool.setuptools]
+packages = ["shared"]

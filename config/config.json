@@ -1,0 +1,19 @@
+{
+  "region": "us-east-1",
+  "bucket": "complaint-copilot-851725469799-us-east-1",
+  "database": "complaint_copilot",
+  "workgroup": "complaint-copilot",
+  "model_id": "amazon.nova-pro-v1:0",
+  "reranker_model_id": "cohere.rerank-v3-5:0",
+  "retrieval_mode": "HYBRID",
+  "rerank": true,
+  "candidate_count": 20,
+  "result_count": 5,
+  "max_tool_rounds": 6,
+  "athena_timeout_seconds": 60,
+  "ingestion_timeout_seconds": 1800,
+  "visibility_timeout_seconds": 600,
+  "knowledge_base_name": "complaint-copilot-kb",
+  "data_source_name": "complaint-documents",
+  "agent_runtime_name": "complaint_copilot"
+}

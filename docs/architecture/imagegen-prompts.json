@@ -1,0 +1,27 @@
+{
+  "tool": "Built-in image_gen",
+  "skill": "/Users/shashankmishra/.codex/skills/.system/imagegen/SKILL.md",
+  "mode": "edit",
+  "region": "us-east-1",
+  "assets": [
+    {
+      "file": "daily-data-pipeline.png",
+      "use_case": "text-localization",
+      "prompt": "Use case: text-localization.\nEdit the supplied AWS daily-ingestion architecture image. Change ONLY the region label in the AWS account boundary to the exact text \"AWS account | us-east-1\". Preserve the existing title, subtitle, typography, layout, all service icons, all connectors, all data prefixes, all explanatory text, the external source and two destination lanes, and the complete image dimensions. All regional AWS resources in this project are in US East (N. Virginia). Titan Text Embeddings V2, Glue, Athena, S3 and OpenSearch labels remain unchanged. Do not add services or change the architecture. Produce a crisp raster image with the same quality and framing as the source.",
+      "output_sha256": "8214a5934b63cbc5c8a678d751c092e3a378fc502a65e06b5c1a1fde9799e302"
+    },
+    {
+      "file": "conversational-agent.png",
+      "use_case": "precise-object-edit",
+      "prompt": "Use case: precise-object-edit.\nAsset type: AWS architecture diagram embedded in developer documentation.\nEdit target: the supplied conversational-agent.png image.\nPrimary request: retain the existing conversational agent architecture and remove the entire bottom panel beneath the AWS account boundary. That bottom panel and every icon, label, arrow or metric inside it must be absent from the final image. Set the subtitle to exactly: \"02 | Conversational agent and tools\". Close the empty bottom space with a neat white margin, preserving all architecture content above it and readable typography. Preserve the main title \"AWS Complaint Intelligence Copilot\".\nInvariants: preserve the AWS account boundary labelled \"AWS account | us-east-1\", AgentCore runtime boundary, the three exact Python tool names analyze_complaints, search_evidence, fetch_current_guidance; Nova Pro regional inference; Athena, S3 curated Parquet, Glue Data Catalog; Bedrock Knowledge Bases Retrieve, OpenSearch Serverless hybrid search top 20, Cohere Rerank 3.5 top 5 passages; analyst Streamlit UI with IAM-authenticated invocation; official CFPB HTTP fetch path; S3 sessions and state/pipeline.json; READY plus epoch checks; IAM roles and CloudWatch Logs. Preserve existing arrows and card alignment. Change the CFPB descriptive label to \"Official guidance (allowlisted pages only)\". Keep the same crisp white, navy, purple, green visual design and AWS service icons. Do not introduce any new service, process, panel or performance metric. Produce the finished raster image.",
+      "output_sha256": "572484b1eb8efee705635a97a1b2984bd914f8f105c4c090bd130eff6804530b"
+    }
+  ],
+  "review_notes": [
+    "These are the final edit prompts applied to the imagegen-generated project diagrams.",
+    "Both account boundaries now show us-east-1; Nova Pro uses regional inference and reranking uses Cohere Rerank 3.5 through Amazon Bedrock.",
+    "Diagrams depict the implemented project; they are not official AWS reference diagrams.",
+    "Multiple S3 icons represent prefixes in one project bucket.",
+    "The agent diagram separates Python code hosted in AgentCore from managed AWS services."
+  ]
+}

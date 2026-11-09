@@ -1,0 +1,21 @@
+{
+  "agentRuntimeName": "complaint_copilot",
+  "agentRuntimeArtifact": {
+    "codeConfiguration": {
+      "code": {
+        "s3": {
+          "bucket": "complaint-copilot-ACCOUNT_ID-us-east-1",
+          "prefix": "runtime/agent.zip"
+        }
+      },
+      "runtime": "PYTHON_3_11",
+      "entryPoint": [
+        "runtime_entrypoint.py"
+      ]
+    }
+  },
+  "roleArn": "arn:aws:iam::ACCOUNT_ID:role/ComplaintCopilotRuntimeRole",
+  "networkConfiguration": {
+    "networkMode": "PUBLIC"
+  }
+}

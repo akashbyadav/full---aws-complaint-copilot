@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:us-east-1::foundation-model/cohere.rerank-v3-5:0"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:Rerank"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}

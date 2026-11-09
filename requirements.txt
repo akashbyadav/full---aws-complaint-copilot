@@ -1,0 +1,7 @@
+# Install locally with Python 3.11. Glue uses its own smaller dependency list.
+boto3==1.43.116
+beautifulsoup4==4.15.0
+pyarrow==22.0.0
+sqlglot==28.10.1
+streamlit==1.66.1
+bedrock-agentcore==1.24.2
